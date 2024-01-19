@@ -90,7 +90,3 @@ let number2 = 12;
 //  input: process.stdin,
 //  output: process.stdout,
 // });
-
-function gitty_up() {
-  console.log("this is for gitty")
-}
