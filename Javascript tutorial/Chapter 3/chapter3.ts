@@ -1,3 +1,5 @@
+//@ts-ignore
+const prompt = require("prompt-sync")({sigint:true}); //to fix prompt error 
 //for loops
 
 let sum1 = 0;
@@ -84,9 +86,37 @@ for (let a in obj_marks) {
 }
 
 //no.3
-let number2 = 12;
 
 // const readline = require('node:readline').createInterface({
 //  input: process.stdin,
 //  output: process.stdout,
 // });
+
+function iscorrectnum() {
+  let input_number =  prompt("Please guess a number: "); 
+  let correct_num = 12;
+     while (true) {
+      if (Number(input_number) == correct_num) {
+        console.log("You have guessed the right number!")
+        break;
+      }
+      else if (Number(input_number) != correct_num) {
+        input_number =  prompt("try again: "); 
+      } 
+    }
+  }
+
+iscorrectnum()
+
+//no. 4
+function mean_func () {
+    let nums = [1, 2, 3, 4, 5]
+    let sum = 0
+    for (let a in nums) {
+      sum += nums[a]
+      console.log(a, sum)
+    }
+    console.log("The mean of", nums, "is", sum/5)
+}
+
+mean_func()
