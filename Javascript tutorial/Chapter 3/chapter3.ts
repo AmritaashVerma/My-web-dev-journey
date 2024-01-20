@@ -120,3 +120,7 @@ function mean_func () {
 }
 
 mean_func()
+
+function something() {
+  console.log("rubbish")
+}
