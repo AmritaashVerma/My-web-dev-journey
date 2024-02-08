@@ -1,7 +1,6 @@
 console.log("This is chapter 4 of the ultimate javascript course.")
 
 //string interpretation
-
 let new_name = "Amritaash Verma"//can also be executed with '' 
 console.log(new_name.length) //prints the length of the name 
 
