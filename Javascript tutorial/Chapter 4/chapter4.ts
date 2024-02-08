@@ -73,3 +73,6 @@ console.log(smth)
 //extracting thte value from string
 smth = "Please give 1000 rupees.";
 console.log(smth.slice(12, 16))
+
+
+console.log("something dammmit")
