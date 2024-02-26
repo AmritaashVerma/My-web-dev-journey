@@ -110,13 +110,13 @@ iscorrectnum()
 
 //no. 4
 function mean_func () {
-    let nums = [1, 2, 3, 4, 5]
+    let nums = [1, 2, 3, 4, 5, 6]
     let sum = 0
     for (let a in nums) {
       sum += nums[a]
       console.log(a, sum)
     }
-    console.log("The mean of", nums, "is", sum/5)
+    console.log("The mean of", nums, "is", sum/nums.length)
 }
 
 mean_func()
