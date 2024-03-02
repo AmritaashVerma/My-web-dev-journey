@@ -1,3 +1,5 @@
+//@ts-ignore
+const prompt = require("prompt-sync")(); //to fix prompt error 
 // accessing elements from arrays
 let numbers = [1, 2, 3, 4]
 console.log(numbers[0])
@@ -26,10 +28,10 @@ console.log(numbers.reverse)
 
 // Looping through arrays
 
-let num = [3, 24, 56]
+let num1 = [3, 24, 56]
 
 //forEach is used when we want to do the operations in the same array
-num.forEach((element, index) => {
+num1.forEach((element, index) => {
     console.log(element, index)
 }) //this function will print out each element in the list
 let namely = "someone";
@@ -37,13 +39,13 @@ let sew_name = Array.from(namely); //used to create an array from another object
 console.log(sew_name)
 
 // for...of 
-for (let i of num) {
+for (let i of num1) {
     console.log(i)
 }
 
 // for...in
-for(let i in num) {
-    console.log(num[i])
+for(let i in num1) {
+    console.log(num1[i])
 }
 
 /*map((value_in_array, index, array)) 
@@ -73,3 +75,39 @@ values and then takes the returned value and the next value till the array is do
 console.log(arr)
 
 //practice sets
+
+//no.1 
+let num_arr = [1, 2, 3, 4, 5, 6]
+let input = Number(prompt("Enter a number to add in the array: "))
+num_arr.push(input)
+console.log(num_arr)
+
+//no.2
+while(input != 0) {
+    num_arr.push(input)
+    input = Number(prompt("Enter another number: "))
+}
+console.log(num_arr)
+
+// no. 3
+let smth = [2, 40, 62, 70, 80, 90, 100, 20, 30, 40, 50, 60, 10]
+let new_num_arr = smth.filter((element) => {
+    return element%10 == 0
+})
+console.log(new_num_arr)
+
+// no. 4
+new_num_arr = [1, 2, 3, 4, 5, 6]
+let arr_of_squares = []
+new_num_arr.forEach((element) => {
+    //@ts-ignore
+    arr_of_squares.push(element*element)
+})
+console.log(arr_of_squares)
+
+//no. 5 
+new_num_arr = [1, 2, 3, 4, 5, 6, 7]
+let factorial = new_num_arr.reduce((value1, value2) => {
+    return value1 * value2
+})
+console.log("The factorial of 7 is", factorial)
