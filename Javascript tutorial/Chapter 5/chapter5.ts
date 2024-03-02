@@ -32,8 +32,8 @@ let num = [3, 24, 56]
 num.forEach((element, index) => {
     console.log(element, index)
 }) //this function will print out each element in the list
-new_name = 'someone'
-let sew_name = Array.from(new_name) //used to create an array from another object
+let namely = "someone";
+let sew_name = Array.from(namely); //used to create an array from another object
 console.log(sew_name)
 
 // for...of 
@@ -73,4 +73,3 @@ values and then takes the returned value and the next value till the array is do
 console.log(arr)
 
 //practice sets
-
