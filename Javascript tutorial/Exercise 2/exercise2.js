@@ -23,6 +23,9 @@ alert("The points of the human were: " + human_points + " and the points of the 
 if (computer_points > human_points) {
     alert(" The computer won!")
 }
+else if(computer_points == human_points) {
+    alert("It's a draw!")
+}
 else {
     alert(" You won!!!")
 }
