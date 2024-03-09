@@ -29,3 +29,10 @@ let cardtitle = document.getElementById("firstcardelement")
 cardtitle.style.color = "blue"
 console.log(document.querySelectorAll(".card-title"))
 console.log(document.getElementsByClassName("card-title"))
+
+let id1 = document.getElementById("id1")
+console.log(id1) 
+console.log(id1.matches(".class")) // this will return false as this element has class box
+console.log(id1.matches(".box")) //returns true "." is the css selector for class "#" is the css selector for id
+console.log(id1.closest(".box")) //returns the previous closest node with same css selector
+console.log(document.getElementById("main-id").contains(id1)) //shows if a given element is in another element
