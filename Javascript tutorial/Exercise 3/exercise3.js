@@ -1,0 +1,5 @@
+let joke = document.getElementById("Jokes")
+let index = Math.floor(Math.random()*11)
+let jokes_array = ["What do kids play when their mom is using the phone? Bored games.", "What do you call an ant who fights crime? A vigilANTe!", "Why are snails slow? Because they're carrying a house on their back.", "What’s the smartest insect? A spelling bee!", "What does a storm cloud wear under his raincoat? Thunderwear.", "What’s Thanos’ favorite app on his phone? Snapchat.", "Sandy’s mum has four kids; North, West, East. What is the name of the fourth child? Sandy, obviously!", "What do you call two bananas on the floor? Slippers.", "Why was 6 afraid of 7? Because 7,8,9.", "Why do ducks always pay with cash? Because they always have bills!", "How much did the man sell his dead batteries for? Nothing, they were free of charge!", "Where do most horses live? In neighhh-borhoods!"]
+console.log(jokes_array.length)
+joke.innerHTML = jokes_array[index]
