@@ -1,7 +1,7 @@
 let a = document.getElementById("learnable")
 // note- id names can be directly used as element nodes.
-console.log(a.innerHTML) //prints only the inner part of the given element. Works for only element nodes
-console.log(a.outerHTML) //prints the whole element
+// console.log(a.innerHTML) //prints only the inner part of the given element. Works for only element nodes
+// console.log(a.outerHTML) //prints the whole element
 a.innerHTML = "This ain't Lorem." // changes the inner/outer html tags can also be added
 // a.outerHTML = "<span id='first'>This is a new span</span>" // changes the inner/outer html
 first = document.getElementById("first")
@@ -14,10 +14,15 @@ a.setAttribute("class", "something else")
 let div = document.createElement('div')
 div.innerHTML = "<h1>This is inserted</h1>"
 a.append(div) //used to add after the given element
-a.prepend(div)//used to add before the given element
 a.before(div) //puts the element before the parent node
 a.after(div) //puts the element after the parent node
 
 
 //insertion can also be performed like this
 a.innerHTML = a.innerHTML + "<h1>This is inserted using innerHTML</h1>"
+//adjacent html insertion
+a.insertAdjacentHTML('beforebegin', '<h1>HELLO</h1>')
+a.insertAdjacentHTML('afterend', '<h1>BYE</h1>')
+//node removal
+a.remove()
+
