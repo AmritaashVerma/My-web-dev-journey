@@ -81,3 +81,5 @@ const new_dict = {
 
 console.log(new_dict["Intelligent"])//these two perform the same function
 console.log(new_dict.Intelligent)//these two perform the same function
+
+console.log("Change to test gitignore.")
