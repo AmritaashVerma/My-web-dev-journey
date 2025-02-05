@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@types/prompt-sync": "^4.2.3",
-    "bootstrap": "^5.3.3"
+    "bootstrap": "^5.3.3",
+    "pnpm": "^9.15.3"
   }
 }
