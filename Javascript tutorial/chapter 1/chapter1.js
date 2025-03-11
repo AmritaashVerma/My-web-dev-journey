@@ -84,7 +84,7 @@ console.log(new_dict.Intelligent)//these two perform the same function
 
 console.log("Change to test gitignore.")
 
-// Revision of old concepts
+// Revision of old concepts -- basically practice questions from the course of apna college
 
 const product = {
   ["Product name"]: "Parker Jotter Standard CT Ball Pen",
@@ -95,9 +95,71 @@ const product = {
 
 const profile = {
   ["ACC_name"] : "shradhakapra",
-  ["Profile bio"]: "Apna College | Ex-Microsoft, DRDO\nTo educate someone is the highest privelege ❤️",
+  ["Profile bio"]: "Apna College | Ex-Microsoft, DRDO. \nTo educate someone is the highest privelege ❤️",
   ["Verified_boolean"]: true
 }
 
 console.log(product);
 console.log(profile);
+/*
+const number = prompt("Enter a number: ");
+if (number%5 == 0) {
+    console.log(number, "is a multiple of 5.");
+}
+else {
+    console.log(number, "is not a multiple of 5.")
+}
+
+let score = prompt("What is your score?")
+if (score > 90) {
+    console.log("A")
+}
+else if (score > 80 & score < 90) {
+    console.log("B")
+}
+*/
+
+// Printing all even number from 1 to 100
+
+for (let i = 1; i<101; i++) {
+    if (i%2 == 0) {
+        console.log(i);
+    }
+}
+const username = prompt("Enter your name to be made into a username: ");
+console.log(`Generated user name = @${username + username.length} and your full name is ${username}`);
+let marks = [85, 97, 44, 37, 76, 60];
+let temp = 0;
+for (let i of marks) {
+    temp += i;
+}
+let average = temp/marks.length;
+console.log(`the average marks of the class = ${average}`);
+
+let original_price = [250, 645, 300, 900, 50];
+
+/*let j = 0;
+for (let i of original_price) {
+    let discounted_price = i - i/10;
+    original_price[j]  = discounted_price;
+    j++;
+}
+console.log(`values after offer ${original_price}`);    
+*/
+
+// alternate method 
+
+for (let i = 0; i < original_price.length; i++) {
+    console.log(`The original price of the item is ${original_price[i]}`);
+    let discounted_price = original_price[i] - original_price[i]/10;
+    console.log(`The discounted price of the respective item is ${discounted_price}`);
+}
+
+let companies = ["Bloomberg", "Mircosoft", "Uber", "Google", "IBM", "Netflix"];
+companies.shift();
+console.log(companies);
+companies.splice(1, 1, "Ola");
+console.log(companies);
+companies.push("Amazon");
+console.log(companies);
+
