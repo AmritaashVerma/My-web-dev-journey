@@ -83,3 +83,21 @@ console.log(new_dict["Intelligent"])//these two perform the same function
 console.log(new_dict.Intelligent)//these two perform the same function
 
 console.log("Change to test gitignore.")
+
+// Revision of old concepts
+
+const product = {
+  ["Product name"]: "Parker Jotter Standard CT Ball Pen",
+  ["Product Price"]: "RS. 270",
+  ["Rating"]: "4/5",
+  ["Number of reviews"]: "7002"
+}
+
+const profile = {
+  ["ACC_name"] : "shradhakapra",
+  ["Profile bio"]: "Apna College | Ex-Microsoft, DRDO\nTo educate someone is the highest privelege ❤️",
+  ["Verified_boolean"]: true
+}
+
+console.log(product);
+console.log(profile);
