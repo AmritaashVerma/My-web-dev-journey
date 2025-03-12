@@ -163,3 +163,37 @@ console.log(companies);
 companies.push("Amazon");
 console.log(companies);
 
+// functions revision 
+
+const sentence = "Checking number of vowe";
+
+function Vowel_number_checker(sentence) {
+    let vowels = 0;
+    for (let i = 0; i < sentence.length; i++) {
+        if (sentence[i].toLowerCase() == "a" || sentence[i].toLowerCase() == "e" || sentence[i].toLowerCase() == "i" || sentence[i].toLowerCase() == "o" || sentence[i].toLowerCase() == "u") {
+            vowels++;
+        }
+    }
+    return vowels;
+}
+
+console.log(Vowel_number_checker(sentence));
+
+const Vowel_checker = (sentence) => {
+    let vowels = 0;
+    for (let i = 0; i < sentence.length; i++) {
+        if (sentence[i].toLowerCase() == "a" || sentence[i].toLowerCase() == "e" || sentence[i].toLowerCase() == "i" || sentence[i].toLowerCase() == "o" || sentence[i].toLowerCase() == "u") {
+            vowels++;
+        }
+    }
+    return vowels;
+}
+
+console.log(Vowel_checker(sentence));
+
+// THIS IS IMPORTANT HERE WE WILL DO FOR EACH LOOP 
+
+let arr = [2, 3, 4, 5, 6, 7, 8, 9];
+arr.forEach((val) => {
+    console.log(val*val);
+})
