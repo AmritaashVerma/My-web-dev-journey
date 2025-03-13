@@ -3,9 +3,14 @@ body {
   color: black;
 }
 
-h1 {
+#first-heading {
   color: black;
   background-color: yellow;
+}
+
+.myClass {
+  background-color: black;
+  color: white;
 }
 
 button {
