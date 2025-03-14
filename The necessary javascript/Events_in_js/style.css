@@ -1,0 +1,11 @@
+#should {
+  background-color: black;
+  color: white;
+}
+
+#would {
+  background-color: blueviolet;
+  color: aliceblue;
+  height: 100px;
+  width: 100px;
+}
