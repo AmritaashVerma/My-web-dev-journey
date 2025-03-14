@@ -35,3 +35,27 @@ console.dir(fruit_list2);
 
 document.querySelector("#fruit-list").innerHTML =
   "<div><p>This is the new text in the document</p></div>"; // this is how you can change the HTML from javascript, works with all properties
+
+//   Attributes
+let heading = document.querySelector("#first-heading");
+console.log(heading.getAttribute("id")); //gives the attributes of an element
+// heading.setAttribute("style", "background-color: red"); sets the value of a new or existing attribute
+
+// Style
+
+let div = document.querySelector("#box");
+console.dir(div.style); // this acceses the styling in the html elements, we can change them in the folloing way by element.style.style-name
+div.style.backgroundColor = "purple";
+div.style.color = "white";
+
+// creating a new element
+let el = document.createElement("button");
+el.innerText = "Click me!";
+console.log(el.innerText);
+
+// adding it to the DOM
+let box_div = document.querySelector("#box");
+// box_div.append(el); // adds the element at inside the end of the given node
+// box_div.prepend(el); // adds the element at inside and of the start of the given node
+// box_div.before(el); // adds the element outside and before the given node
+box_div.after(el); // adds the element outside and after the given node
